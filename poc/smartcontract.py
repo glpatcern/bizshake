@@ -68,9 +68,7 @@ def Main(operation, args):
             return 'Invalid arguments'
         category = args[1]
         id = args[2]
-        skey = concat(category, id)
-        data = Get(GetContext(), skey)
-        #data = get(category, id)
+        data = get(category, id)
         Notify(['Retrieve:', category, id])
         return data
 
